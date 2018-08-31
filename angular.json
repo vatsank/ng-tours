@@ -50,7 +50,7 @@
 
                     "options": {
                         "browserTarget": "travelAgency:build",
-                        "port": 5200
+                        "port": 4200
                     },
                     "configurations": {
                         "production": {

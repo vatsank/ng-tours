@@ -11,6 +11,9 @@ import { Observable } from 'rxjs';
 export class TourComponent implements OnInit {
 
   private tourList: Tour[];
+  divine = 'assets/images/divine.jpg';
+  heritage  = 'assets/images/heritage.jpg';
+  adventure = 'assets/images/adventure.jpg';
   constructor( private service: TourAPIService) {
 
     // this.tourList = [

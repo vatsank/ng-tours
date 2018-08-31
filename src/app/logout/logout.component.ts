@@ -11,9 +11,10 @@ export class LogoutComponent implements OnInit {
   constructor(private service: CompCommunicationService) { }
 
   ngOnInit() {
-  }
-  logout() {
 
+    sessionStorage.removeItem('isUserLogged');
     this.service.changeMessage('logout');
+
   }
+
 }

@@ -1,10 +1,12 @@
 <nav>
     <ol>
         <li *ngFor='let eachLink of linkList'>
-            <a [routerLink]="[eachLink.linkRef]">{{eachLink.linkText}}</a>
+            <a [routerLink]="[eachLink.linkRef]" [skipLocationChange]=true>{{eachLink.linkText}}</a>
         </li>
-        <li *ngIf='showLogin'><a href='javascript:void(0)'>Login</a></li>
-        <li *ngIf='showLogout'><a href='javascript:void(0)'>Logout</a></li>
+        <li *ngIf='showLogin'><a [routerLink]="['/login']">Login</a></li>
+        <li *ngIf='showLogout'>
+            <a [routerLink]="['/logout']">Logout</a>
+        </li>
 
     </ol>
 

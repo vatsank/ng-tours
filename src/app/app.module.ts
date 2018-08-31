@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HttpClientModule, HttpClient} from '@angular/common/http';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
@@ -19,6 +19,7 @@ import { ShowBranchesComponent } from './show-branches/show-branches.component';
 import { FilterPipe } from './filter.pipe';
 import { ConfirmationComponent } from './confirmation/confirmation.component';
 import {NgxPaginationModule} from 'ngx-pagination';
+import { DestinationComponent } from './destination/destination.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,12 +34,13 @@ import {NgxPaginationModule} from 'ngx-pagination';
     LogoutComponent,
     ShowBranchesComponent,
     FilterPipe,
-    ConfirmationComponent
+    ConfirmationComponent,
+    DestinationComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule, HttpClientModule , FormsModule,
-           NgbModule , NgxPaginationModule ],
+           NgbModule , NgxPaginationModule , ReactiveFormsModule],
   providers: [HttpClient],
   entryComponents: [ConfirmationComponent],
   bootstrap: [AppComponent]
