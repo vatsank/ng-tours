@@ -1,0 +1,11 @@
+<nav>
+    <ol>
+        <li *ngFor='let eachLink of linkList'>
+            <a [routerLink]="[eachLink.linkRef]">{{eachLink.linkText}}</a>
+        </li>
+        <li *ngIf='showLogin'><a href='javascript:void(0)'>Login</a></li>
+        <li *ngIf='showLogout'><a href='javascript:void(0)'>Logout</a></li>
+
+    </ol>
+
+</nav>

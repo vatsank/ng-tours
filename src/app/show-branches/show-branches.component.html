@@ -1,0 +1,38 @@
+<div *ngIf='showForm' class='col-md-4'>
+    <form #f="ngForm" (ngSubmit)='submit()'>
+        <div class='form-group'>
+            <label for="id">Id</label>
+            <input type="text" name='id' [(ngModel)]='branch.id' class='form-control'></div>
+        <div class='form-group'>
+            <label for="location">Location</label>
+            <input type="text" name="location" [(ngModel)]='branch.location' class='form-control'>
+        </div>
+        <div class='form-group'>
+            <label for="mobileNumber">Mobile Number</label>
+            <input type="text" name="mobileNumber" [(ngModel)]='branch.mobileNumber' class='form-control'>
+        </div>
+        <div class='form-group'>
+            <label for="incharge">Manager</label>
+            <input type="text" name="incharge" [(ngModel)]='branch.incharge' class='form-control'>
+        </div>
+        <div class='form-group'>
+            <input type="submit" value="Add" class='btn btn-primary'></div>
+    </form>
+</div>
+<table class="table table-bordered">
+    <tr>
+        <td colspan="2"><input type="search" [(ngModel)]='srchCondition'></td>
+        <td colspan="4" style='text-align: right'><button class='fa fa-plus-square' (click)='change()'>ADD</button></td>
+    </tr>
+    <tr *ngFor="let eachBranch of branchList |
+         filter:'location':srchCondition |
+               paginate :{itemsPerPage:5, currentPage:p}">
+        <td>{{eachBranch.id}}</td>
+        <td>{{eachBranch.location | uppercase}}</td>
+        <td>{{eachBranch.mobileNumber}}</td>
+        <td>{{eachBranch.incharge}}</td>
+        <td style='text-align: center'><button class='fa fa-edit fa-2x' (click)='edit(eachBranch)'></button></td>
+        <td style='text-align: center'><button class='fa fa-trash fa-2x' (click)='delete(eachBranch)'></button></td>
+    </tr>
+</table>
+<pagination-controls (pageChange)="p=$event"></pagination-controls>

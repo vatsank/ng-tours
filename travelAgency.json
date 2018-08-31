@@ -1,0 +1,122 @@
+{
+  "branches": [
+    {
+      "id": "703",
+      "location": "Nellore",
+      "incharge": "Reddy",
+      "mobileNumber": "484848"
+    },
+    {
+      "id": "701",
+      "location": "Hyderabad",
+      "incharge": "Abbas",
+      "mobileNumber": "8949494"
+    },
+    {
+      "id": "702",
+      "location": "Guntur",
+      "incharge": "Narasimha",
+      "mobileNumber": "3484848"
+    },
+    {
+      "id": "704",
+      "location": "Trichy",
+      "incharge": "Gopi",
+      "mobileNumber": "4848848"
+    },
+    {
+      "id": "705",
+      "location": "Chennai",
+      "incharge": "Kartik",
+      "mobileNumber": "4848482"
+    },
+    {
+      "id": "706",
+      "location": "Delhi",
+      "incharge": "Vimal",
+      "mobileNumber": "1239494"
+    },
+    {
+      "id": "707",
+      "location": "Trichy",
+      "incharge": "Ranga",
+      "mobileNumber": "8484223"
+    }
+  ],
+  "customers": [],
+  "destinations": [
+    {
+      "id": 201,
+      "name": "birla Mandir",
+      "description": "The glistening white structure dotting the skyline of modern Hyderabad",
+      "image": "assets/images/birla.jpg",
+      "type": "Divine"
+    },
+    {
+      "id": 202,
+      "name": "Yellamma temple",
+      "description": "One of the most revered temples of Hyderabad",
+      "image": "assets/images/ellamma.jpg",
+      "type": "Divine"
+    },
+    {
+      "id": 203,
+      "name": "Charminar",
+      "description": "Charminar is a monument and a mosque, which is synonymous with the history of Hyderabad",
+      "image": "assets/images/charminar.jpg",
+      "type": "Heritage"
+    }
+  ],
+  "packages": [
+    {
+      "id": 101,
+      "name": "Hyderabad Darshan",
+      "days": 1,
+      "amount": 450
+    },
+    {
+      "id": 102,
+      "name": "Srisailam",
+      "days": 2,
+      "amount": 1450
+    }
+  ],
+  "tours": [
+    {
+      "id": 900,
+      "tourName": "Beautiful Kashmir",
+      "description": "Lakes and Garden in Kashmir",
+      "image": "assets/images/kashmir.jpg",
+      "price": 45000.898,
+      "type": "Daily",
+      "rating": 4
+    },
+    {
+      "id": 901,
+      "tourName": "Beaches of Andaman",
+      "description": "Lovely Beaches and Islands",
+      "image": "assets/images/andaman.jpg",
+      "price": 55000.222,
+      "type": "interstate",
+      "rating": 3
+    },
+    {
+      "id": 902,
+      "tourName": "Divine Vaishnodevi",
+      "description": "Lakes and Garden in Kashmir",
+      "image": "assets/images/vaishnodevi.jpg",
+      "price": 25000,
+      "type": "interstate",
+      "rating": 4.5
+    },
+    {
+      "id": 903,
+      "tourName": "Tirupathi Balaji",
+      "description": "Enjoy Spritiural and Serene Tirumala",
+      "image": "assets/images/tirupathi.jpg",
+      "price": 15000,
+      "type": "weekend",
+      "rating": 4.4
+    }
+  ]
+}

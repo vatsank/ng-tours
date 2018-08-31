@@ -1,0 +1,40 @@
+{{startDate | date : 'fullDate'}}
+<ng-template #t let-fill="fill">
+    <span class="star" [class.full]="fill === 100">
+  <span class="half" [style.width.%]="fill">&hearts;</span>&hearts;
+    </span>
+</ng-template>
+<table class='table table-striped'>
+    <tr>
+        <th></th>
+        <th>Tour Name</th>
+        <th>Description</th>
+        <th>price</th>
+        <th>Type</th>
+        <th>Rating</th>
+    </tr>
+    <tr *ngFor='let eachTour of list'>
+        <td><img [src]="eachTour.image" alt="" class='img img-thumbnail'></td>
+        <td>{{eachTour.tourName | uppercase}}</td>
+        <td>{{eachTour.description}}</td>
+        <td>{{eachTour.price | currency :"INR":"symbol":"5.2-2"}}</td>
+        <td>{{eachTour.type}}</td>
+        <td>
+            <ngb-rating [(rate)]="eachTour.rating" [max]='5' [starTemplate]='t' [readonly]='true'></ngb-rating>
+
+        </td>
+    </tr>
+
+</table>
+<div class='form-group col-md-4'>
+
+    <label for="tour" class='label-info'>Enter the Tour Name</label>
+
+    <input type="text" [(ngModel)]='tour' id='tour' class='form-control'>
+</div>
+
+<app-confirm-booking [tourRequested]='tour' (confirmMsg)='update($event)'></app-confirm-booking>
+
+<app-tour></app-tour>
+
+<p [ngClass]='info'>{{status}}</p>
