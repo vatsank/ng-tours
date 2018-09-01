@@ -1,3 +1,9 @@
-a {
-    margin: 10px 10px;
+img {
+    width: 75px;
+    height: 80px;
+}
+
+ul>li {
+    margin: 20px 20px;
+    list-style: none;
 }

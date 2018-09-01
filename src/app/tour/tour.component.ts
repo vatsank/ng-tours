@@ -10,17 +10,14 @@ import { Observable } from 'rxjs';
 })
 export class TourComponent implements OnInit {
 
-  private tourList: Tour[];
   divine = 'assets/images/divine.jpg';
   heritage  = 'assets/images/heritage.jpg';
   adventure = 'assets/images/adventure.jpg';
+
+  private tourList: Tour[];
   constructor( private service: TourAPIService) {
 
-    // this.tourList = [
-    //   {id: 101, tourName: 'Singapore', description: ' parks and beaches of singapore',
-    //      image: 'assets/images/singapore.jpg',
-    //       price: 45000 , type: 'international'}
-    // ];
+
   }
 
   ngOnInit() {

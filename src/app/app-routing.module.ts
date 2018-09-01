@@ -12,10 +12,10 @@ import { UniversalGuard } from './universal.guard';
 const routes: Routes = [
   {path: '', redirectTo: 'login', pathMatch: 'full'},
   {path: 'login', component: LoginComponent},
-  {path: 'destination/:code', component: DestinationComponent},
   {path: 'logout', component: LogoutComponent},
   {path: 'branches', component: ShowBranchesComponent, canActivate: [UniversalGuard]},
-  {path: 'tours', component: TourComponent, canActivate: [UniversalGuard] },
+  {path: 'tours', component: TourComponent, canActivate: [UniversalGuard] , children: [
+    {path: 'destination/:code', component: DestinationComponent} ]},
   {path: 'home', component: ContentComponent, canActivate: [UniversalGuard] },
   {path: 'booking', component: BookTourComponent , canActivate: [UniversalGuard] },
   {path: '**', redirectTo: 'home'}

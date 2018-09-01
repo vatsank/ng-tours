@@ -1,12 +1,20 @@
-<div>
+<div class='row'>
     <div class='col-md-4'>
 
-        <a [routerLink]="['/destination',101]"><img [src]='divine'></a>
-        <a [routerLink]="['/destination',102]"><img [src]='adventure'></a>
-        <a [routerLink]="['/destination',103]"><img [src]='heritage'></a>
+        <ul>
+            <li>
+                <a [routerLink]="['/tours/destination',101]"><img [src]='divine' class='img img-thumbnail'></a>
+            </li>
+            <li>
+                <a [routerLink]="['/tours/destination',102]"><img [src]='adventure' class='img img-thumbnail'></a>
+            </li>
+            <li>
+                <a [routerLink]="['/tours/destination',103]"><img [src]='heritage' class='img img-thumbnail'></a>
+            </li>
+        </ul>
 
     </div>
     <div class='col-md-8'>
-
+        <router-outlet></router-outlet>
     </div>
 </div>
