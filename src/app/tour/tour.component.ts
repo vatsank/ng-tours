@@ -29,5 +29,6 @@ export class TourComponent implements OnInit {
     getTours(): Observable<Tour[]> {
 
       return this.service.findAllTours();
+
     }
 }

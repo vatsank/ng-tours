@@ -16,11 +16,12 @@ export class ShowBranchesComponent implements OnInit {
    mobileNumber: 0
   };
 
+  btnText ='Add';
   branchList: Branch[];
   srchCondition = '';
   p = 1;
   showForm = false;
-
+  pos: number;
   @ViewChild('f') form: any;
   constructor(private service: TourAPIService) { }
 
@@ -36,11 +37,11 @@ export class ShowBranchesComponent implements OnInit {
   }
   edit(branch) {
 
-    console.log(this.form);
     this.branch = branch;
+    this.btnText = 'Edit';
+     this.showForm = true;
 
-    this.showForm = true;
-
+     this.pos = this.branchList.indexOf(branch);
   }
   delete(branch) {
 
@@ -52,10 +53,7 @@ export class ShowBranchesComponent implements OnInit {
   }
    submit() {
 
-      console.log(this.branch);
-
-     // this.service.updateBranch(branch).subscribe();
-
+     if (this.btnText === 'Add') {
       this.service.addBranch(this.branch).subscribe(data => {
 
         this.branchList.push(data);
@@ -63,6 +61,14 @@ export class ShowBranchesComponent implements OnInit {
         this.form.reset();
 
       });
+    } else {
+
+      this.service.updateBranch(this.branch).subscribe(data => {
+
+        this.branchList[this.pos] = data;
+      });
+
+    }
 
 
    }
