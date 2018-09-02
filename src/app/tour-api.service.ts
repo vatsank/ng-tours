@@ -18,9 +18,13 @@ export class TourAPIService {
 
   constructor(private service: HttpClient) { }
 
-  findAllDestinations(): Observable<Destination[]> {
 
-    return this.service.get<Destination[]>(this.baseURL + 'destinations');
+  findTrendingDestinations(srchString): Observable<Destination[]> {
+    return this.service.get<Destination[]>(this.baseURL + 'destinations?category=' + srchString);
+  }
+
+  findAllDestinations(srchString): Observable<Destination[]> {
+    return this.service.get<Destination[]>(this.baseURL + 'destinations?type=' + srchString);
   }
 
   findAllTours(): Observable<Tour[]> {

@@ -18,7 +18,7 @@ export class ContentComponent implements OnInit {
    }
   ngOnInit() {
 
-    this.api.findAllDestinations().
+    this.api.findTrendingDestinations('trending').
              subscribe(resp => this.list = resp);
 
   }

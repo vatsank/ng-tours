@@ -1,1 +1,16 @@
-{{msg}}
+<div class='card-deck'>
+    <div *ngFor='let eachDestination of list' class='card'>
+
+        <div class='card-img' style='text-align: center'>
+            <img src={{eachDestination.image}} class='img img-thumbnail'>
+        </div>
+
+        <div class='card-header' style='text-align: center'>
+            {{eachDestination.name |uppercase}}
+        </div>
+
+        <div class='card-body'>
+            {{eachDestination.description}}
+        </div>
+    </div>
+</div>

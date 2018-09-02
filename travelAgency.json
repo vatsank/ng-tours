@@ -1,122 +1,171 @@
 {
-  "branches": [
-    {
-      "id": "703",
-      "location": "Nellore",
-      "incharge": "Reddy",
-      "mobileNumber": "484848"
-    },
-    {
-      "id": "701",
-      "location": "Hyderabad",
-      "incharge": "Abbas Ali",
-      "mobileNumber": "8949494"
-    },
-    {
-      "id": "702",
-      "location": "Guntur",
-      "incharge": "Narasimha Reddy",
-      "mobileNumber": "3484848"
-    },
-    {
-      "id": "704",
-      "location": "Trichy",
-      "incharge": "Gopi",
-      "mobileNumber": "4848848"
-    },
-    {
-      "id": "705",
-      "location": "Chennai",
-      "incharge": "Kartik",
-      "mobileNumber": "4848482"
-    },
-    {
-      "id": "706",
-      "location": "Delhi",
-      "incharge": "Vimal",
-      "mobileNumber": "1239494"
-    },
-    {
-      "id": "707",
-      "location": "Trichy",
-      "incharge": "Ranga",
-      "mobileNumber": "8484223"
-    }
-  ],
-  "customers": [],
-  "destinations": [
-    {
-      "id": 201,
-      "name": "birla Mandir",
-      "description": "The glistening white structure dotting the skyline of modern Hyderabad",
-      "image": "assets/images/birla.jpg",
-      "type": "Divine"
-    },
-    {
-      "id": 202,
-      "name": "Yellamma temple",
-      "description": "One of the most revered temples of Hyderabad",
-      "image": "assets/images/ellamma.jpg",
-      "type": "Divine"
-    },
-    {
-      "id": 203,
-      "name": "Charminar",
-      "description": "Charminar is a monument and a mosque, which is synonymous with the history of Hyderabad",
-      "image": "assets/images/charminar.jpg",
-      "type": "Heritage"
-    }
-  ],
-  "packages": [
-    {
-      "id": 101,
-      "name": "Hyderabad Darshan",
-      "days": 1,
-      "amount": 450
-    },
-    {
-      "id": 102,
-      "name": "Srisailam",
-      "days": 2,
-      "amount": 1450
-    }
-  ],
-  "tours": [
-    {
-      "id": 900,
-      "tourName": "Beautiful Kashmir",
-      "description": "Lakes and Garden in Kashmir",
-      "image": "assets/images/kashmir.jpg",
-      "price": 45000.898,
-      "type": "Daily",
-      "rating": 4
-    },
-    {
-      "id": 901,
-      "tourName": "Beaches of Andaman",
-      "description": "Lovely Beaches and Islands",
-      "image": "assets/images/andaman.jpg",
-      "price": 55000.222,
-      "type": "interstate",
-      "rating": 3
-    },
-    {
-      "id": 902,
-      "tourName": "Divine Vaishnodevi",
-      "description": "Lakes and Garden in Kashmir",
-      "image": "assets/images/vaishnodevi.jpg",
-      "price": 25000,
-      "type": "interstate",
-      "rating": 4.5
-    },
-    {
-      "id": 903,
-      "tourName": "Tirupathi Balaji",
-      "description": "Enjoy Spritiural and Serene Tirumala",
-      "image": "assets/images/tirupathi.jpg",
-      "price": 15000,
-      "type": "weekend",
-      "rating": 4.4
-    }
-  ]
+    "branches": [{
+            "id": "703",
+            "location": "Nellore",
+            "incharge": "Reddy",
+            "mobileNumber": "484848"
+        },
+        {
+            "id": "701",
+            "location": "Hyderabad",
+            "incharge": "Abbas Ali",
+            "mobileNumber": "8949494"
+        },
+        {
+            "id": "702",
+            "location": "Guntur",
+            "incharge": "Narasimha Reddy",
+            "mobileNumber": "3484848"
+        },
+        {
+            "id": "704",
+            "location": "Trichy",
+            "incharge": "Gopi",
+            "mobileNumber": "4848848"
+        },
+        {
+            "id": "705",
+            "location": "Chennai",
+            "incharge": "Kartik",
+            "mobileNumber": "4848482"
+        },
+        {
+            "id": "706",
+            "location": "Delhi",
+            "incharge": "Vimal",
+            "mobileNumber": "1239494"
+        },
+        {
+            "id": "707",
+            "location": "Trichy",
+            "incharge": "Ranga",
+            "mobileNumber": "8484223"
+        },
+        {
+            "id": "723",
+            "location": "Keelkattalai",
+            "incharge": "Bharath",
+            "mobileNumber": "49484848"
+        }
+    ],
+    "customers": [],
+    "destinations": [{
+            "id": 201,
+            "name": "birla Mandir",
+            "description": "The glistening white structure dotting the skyline of modern Hyderabad",
+            "image": "assets/images/birla.jpg",
+            "type": "Divine",
+            "category": "trending"
+        },
+        {
+            "id": 202,
+            "name": "Yellamma temple",
+            "description": "One of the most revered temples of Hyderabad",
+            "image": "assets/images/ellamma.jpg",
+            "type": "Divine",
+            "category": "trending"
+
+        },
+        {
+            "id": 203,
+            "name": "Chilkur",
+            "description": "Chilkur Balaji Temple, popularly known as Visa Balaji Temple an ancient Hindu temple of Lord Balaji on the banks of Osman Sagar ",
+            "image": "assets/images/chilkur.jpg",
+            "type": "Divine"
+        },
+        {
+            "id": 204,
+            "name": "Charminar",
+            "description": "Charminar is a monument and a mosque, which is synonymous with the history of Hyderabad",
+            "image": "assets/images/charminar.jpg",
+            "type": "Heritage",
+            "category": "trending"
+        },
+        {
+            "id": 205,
+            "name": "Qutub",
+            "description": "The Qutb Shahi Tombs are located in the Ibrahim Bagh (garden precinct), close to the famous Golconda Fort",
+            "image": "assets/images/qutub.jpg",
+            "type": "Heritage"
+        },
+        {
+            "id": 206,
+            "name": "Salarjung",
+            "description": "The Salar Jung Museum is an art museum located at Dar-ul-Shifa, on the southern bank of the Musi River",
+            "image": "assets/images/salarjung.jpg",
+            "type": "Heritage"
+        },
+        {
+            "id": 207,
+            "name": "Bhongir",
+            "description": "The Bhongir hill is a huge rock formation. It is more than 700-feet high and is sprawled over 40 acres of land. This unique rock is locally known as the ‘Eka sila",
+            "image": "assets/images/bhongir.jpg",
+            "type": "Adventure"
+
+        },
+        {
+            "id": 208,
+            "name": "Nagarjuna Sagar",
+            "description": "Nagarjuna Sagar Dam, one of the world’s largest and tallest  Masonry dam built across the Krishna river at Nagarjuna Sagar which is in Nalgonda District",
+            "image": "assets/images/nagarjunasagar.jpg",
+            "type": "Adventure"
+        },
+        {
+            "id": 209,
+            "name": "Vikarabad",
+            "description": "Vikarabad is a charming place where one can derive pleasure in trekking. In fact, it is one of the favourite trekking spots for people who crave for adventure close to Hyderabad city",
+            "image": "assets/images/vikarabad.jpg",
+            "type": "Adventure"
+        }
+    ],
+    "packages": [{
+            "id": 101,
+            "name": "Hyderabad Darshan",
+            "days": 1,
+            "amount": 450
+        },
+        {
+            "id": 102,
+            "name": "Srisailam",
+            "days": 2,
+            "amount": 1450
+        }
+    ],
+    "tours": [{
+            "id": 900,
+            "tourName": "Beautiful Kashmir",
+            "description": "Lakes and Garden in Kashmir",
+            "image": "assets/images/kashmir.jpg",
+            "price": 45000.898,
+            "type": "Daily",
+            "rating": 4
+        },
+        {
+            "id": 901,
+            "tourName": "Beaches of Andaman",
+            "description": "Lovely Beaches and Islands",
+            "image": "assets/images/andaman.jpg",
+            "price": 55000.222,
+            "type": "interstate",
+            "rating": 3
+        },
+        {
+            "id": 902,
+            "tourName": "Divine Vaishnodevi",
+            "description": "Lakes and Garden in Kashmir",
+            "image": "assets/images/vaishnodevi.jpg",
+            "price": 25000,
+            "type": "interstate",
+            "rating": 4.5
+        },
+        {
+            "id": 903,
+            "tourName": "Tirupathi Balaji",
+            "description": "Enjoy Spritiural and Serene Tirumala",
+            "image": "assets/images/tirupathi.jpg",
+            "price": 15000,
+            "type": "weekend",
+            "rating": 4.4
+        }
+    ]
 }
